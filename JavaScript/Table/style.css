@@ -1,0 +1,149 @@
+@import url(https://fonts.googleapis.com/css?family=Lato:100,200,300,400);
+		body {
+		  margin-top: 100;
+		  padding: 0;
+		  font-family: "Lato";
+		  font-weight: 200;
+		}
+
+		h1 {
+		  margin: 0.25em;
+		}
+
+		section {
+		  position: relative;
+		  padding-top: 37px;
+		  width: 95%;
+		  margin: 0 auto;
+		  background: #669;
+		}
+
+		
+
+		table {
+		  border-spacing: 0;
+		  border-collapse: collapse;
+		  width: 100%;
+		}
+
+		td, th {
+		  border: 0;
+		  border-left: 1px solid #eee;
+		  background: #e5e5e5;
+		  padding: 10px 25px;
+		}
+
+		td:first-child,
+		th:first-child {
+		  border: 0;
+		}
+
+		tbody tr:nth-child(even) td {
+		  background: #f7f7f7;
+		}
+
+		th {
+		  height: 0;
+		  line-height: 0;
+		  padding-top: 0;
+		  padding-bottom: 0;
+		  color: transparent;
+		  border: none;
+		  white-space: nowrap;
+		}
+
+		th div {
+		  position: absolute;
+		  background: transparent;
+		  color: #fff;
+		  padding: 9px 25px;
+		  top: 0;
+		  margin-left: -25px;
+		  line-height: normal;
+		  border-left: 1px solid #eee;
+		}
+
+		th:first-child div {
+		  border: none;
+		}
+
+		.actions {
+		  white-space: nowrap;
+		  font-size: 0;
+		}
+
+		.btn {
+		  text-transform: uppercase;
+		  color: white;
+		  display: inline-block;
+		  font-size: 12px;
+		  font-weight: 100;
+		  padding: 0 1em 0 2em;
+		  text-decoration: none;
+		  margin: 0 0.25em;
+		  position: relative;
+		  line-height: 2em;
+		  min-height: 2em;
+		  color: #4e5c85;
+		  border: 1px solid #4e5c85;
+		  transition: all 0.1s linear;
+		}
+		.btn:hover {
+		  cursor: pointer;
+		  color: white;
+		  border: 1px solid #1b2952;
+		  background: #4e5c85;
+		}
+		.btn svg {
+		  position: absolute;
+		  top: 0.5em;
+		  left: 0.5em;
+		  height: 1em;
+		  fill: currentColor;
+		}
+		.btn.btn-save, .btn.btn-query, .btn.btn-run {
+		  color: #339233;
+		  border: 1px solid #339233;
+		  transition: all 0.1s linear;
+		}
+		.btn.btn-save:hover, .btn.btn-query:hover, .btn.btn-run:hover {
+		  cursor: pointer;
+		  color: white;
+		  border: 1px solid #005f00;
+		  background: #339233;
+		}
+		.btn.btn-revert {
+		  color: #923333;
+		  border: 1px solid #923333;
+		  transition: all 0.1s linear;
+		}
+		.btn.btn-revert:hover {
+		  cursor: pointer;
+		  color: white;
+		  border: 1px solid #5f0000;
+		  background: #923333;
+		}
+
+		tbody tr td:last-child {
+		  white-space: nowrap;
+		  font-size: 0;
+		  position: relative;
+		}
+		@media (max-width: 1200px) {
+		  tbody tr td:last-child .btn {
+		    padding: 0 1em;
+		    border: 0;
+		    background: transparent;
+		  }
+		  tbody tr td:last-child .btn svg {
+		    top: 0.25em;
+		    left: 0.25em;
+		    height: 1.5em;
+		  }
+		  tbody tr td:last-child .btn span {
+		    display: none;
+		  }
+		  tbody tr td:last-child .btn:hover {
+		    border: 0;
+		  }
+		}

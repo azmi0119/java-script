@@ -1,0 +1,31 @@
+
+<input type="text" name="" id="name"><br> 
+<input type="button" value="Add Text" onclick="addTextFun()">
+
+<ul id="box">
+	<li>Abdullah</li>
+	<li>Shamsha</li>
+	<li>Dilshan</li>
+	 
+</ul>
+
+<script type="text/javascript">
+	function addTextFun(){
+		let ulId = document.getElementById('box');
+		let newLi = document.createElement('li');
+		let name = document.getElementById('name').value;
+		let textLi = document.createTextNode(name);
+
+		// you can aslo use textContent for appending 
+		// newLi.textContent = document.getElementById('name').value;
+
+		newLi.appendChild(textLi);
+
+		ulId.appendChild(newLi);
+
+		document.getElementById('name')     
+
+
+	}
+</script>
+

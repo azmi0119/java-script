@@ -1,0 +1,34 @@
+<div id="attrName">Abdullah</div>
+<input type="button" value="Add Attribute" onclick="addAtrr()" />
+<input type="button" value="Get Attribute" onclick="getAttr()" />
+<input type="button" value="Has Attribute" onclick="hasAttr()" /> 
+<input type="button" value="Remove Attribute" onclick="removeAttr()" /> 
+
+<script>
+	/*
+		setAttribute
+		getAttribute
+		hasAtrribute
+		removeAtrribute
+	*/
+
+	function addAtrr(){
+		let name = document.getElementById('attrName');
+		name.setAttribute('class','newClassAdded');
+	}
+
+	function getAttr(){
+		let name = document.getElementById('attrName');
+		console.log(name.getAttribute('class'));
+	}
+
+	function hasAttr(){
+		let name = document.getElementById('attrName');
+		console.log(name.hasAttribute('class'));
+	}
+	
+	function removeAttr(){
+		let name = document.getElementById('attrName');
+		console.log(name.removeAttribute('class'));
+	}
+</script>

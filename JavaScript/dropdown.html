@@ -1,0 +1,14 @@
+dropdown.js<script type="text/javascript">
+	var arr = ['Delhi','Mumbai','Lucknow','Noida','Kanpur','Azamgarh','Mau'];
+	arr.sort();
+	var city = arr.length;
+	var html = "<select><option>Select City</option>";
+	for(var i = 0; i<=city; i++){
+		html = html+"<option>"+arr[i]+"</option>";
+	}
+	html = html + "</select>";
+	document.write(html);
+</script>
+
+
+ 

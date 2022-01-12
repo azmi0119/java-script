@@ -1,0 +1,9 @@
+<input type="button" name="" id="btn" value="Click Listner">
+<script type="text/javascript">
+	let btn = document.getElementById('btn');
+	btn.addEventListener("click",test);
+	function test(){
+		console.log('Add Event Listener');
+		btn.removeEventListener("click",test);
+	}
+</script>

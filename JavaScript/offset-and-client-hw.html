@@ -1,0 +1,17 @@
+<div id="name" style="height: 500px; width: 800px; border: 1 solid px; background-color: red;">Hello Div</div>
+
+<script type="text/javascript">
+	let tagName = document.getElementById('name');
+	document.write('Client Width and Hight');
+	let clientHeight = tagName.clientHeight;
+	let clientWidth = tagName.clientWidth;
+	console.log(clientHeight);
+	console.log(clientWidth);
+
+	document.write("<br>");
+
+	let offseHeight = tagName.offsetHeight;
+	let offsetWidth = tagName.offsetWidth;
+	console.log(offseHeight);
+	console.log(offsetWidth);
+</script>

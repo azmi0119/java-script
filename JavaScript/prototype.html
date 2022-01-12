@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	function User(fn, ln){
+		this.fname = fn;
+		this.lname = ln;
+	}
+	/*
+		syntax of prototype 
+			class_name.prototype.method_name = function(first_argument) {
+				// body...
+			};
+	*/
+	
+	// User.prototype.age = '30'; 		OR
+	User.prototype.FullName = function(){
+		return this.fname+" "+this.lname;
+	}
+	var obj1 = new User('Abdullah','Sheikh');
+	console.log(obj1.FullName());
+</script>

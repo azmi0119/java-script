@@ -1,0 +1,330 @@
+alert
+
+console.log
+
+document.write
+
+document.getElementById
+
+document.getElemenByTag
+
+document.getElementByClass
+
+asyn -> 
+
+defer -> defer is say that first HTML code will be loaded after that js file will be load.
+
+var -> 
+
+
+let -> If you decalare any variable of name t hen you can not redeclared same of of varaible in same javascript file .
+Note1 :- How you can resolve it ?
+Ans  :- You can easily resolve it with anonymous function .
+
+test1.js file example : (function() {
+			let x =10;
+			let y =20;
+			document.write(x+y);
+		})();
+test2.js file example : (function() {
+			let x =30;
+			let y =50;
+			document.write(x*y);
+		})();
+
+Note2 -: You can call anonymous function easily, You can hold the function into a variable and with that variable name you can call your anonymous function .
+
+Example below :
+	var x = function(){
+		document.write("Hello anonymous function, and call it with variable name");
+	} 
+	x();
+
+const -> variable value can not be change after declaration
+
+typeof
+data types
+	string
+	number
+	boolean
+	array -> when you print arrays values in javascript then it will show result into object .
+	object -> When you print object value in javascript then it will also show result into object.
+	null 
+	undefined
+Template Literals 
+
+break
+
+continue
+
+length
+
+search('letter that you want to search') // it is return index of letter
+
+indexOf('value')
+
+lastIndexOf('values')
+
+slice(12,16) // give the starting point and ending point, 
+Note:- Slice can move both side if you give +ve value then it will move right side and if you give -ve value then it will move left side .
+
+substring('value') // it do work same as slice but it will only move right side .
+
+substr(12,4) // first argument is position and second argument is how many number that you want to add or collect.
+
+replace('Vishal','amit') // first args replace with second argument
+
+toLowerCase
+
+toUpperCase
+
+trim() 
+
+concat()
+
+sort() // it short ascending order 
+
+pop() :- it will remove a value from right side
+
+shift()
+
+push() :- it will add a value from right side
+
+unshift()
+
+splice(postion,length) :- Remove any specific value data 
+
+Array.isAarray()
+
+split()
+
+join()
+
+delete
+
+in
+
+Getters :- It is denoted by 'get' keyword, it is used for getting the value .
+
+Setters :- It is denoted by 'set' keyword, it is used for set the value, and remember one thing it will always take one argument.
+
+prototype :- It is use for assign any value to any constructor.
+
+Math.round :- It will return round of number
+
+Math.ciel :- It will return next of value 
+
+Math.trunc :- It will ignore number after point
+
+Math.pow :- It will return power of number 
+
+Math.sqrt :- It will return squire of number
+
+Math.abs :- It will return absolute value either number positive or negative 
+
+Math.min :- It will return minimun value of list
+
+Math.max :- It will return maximun value of list
+
+Math.random :- It will find the random number of give number 
+
+Math.log :- 
+
+
+1. Database vs Schema
+2. Primary Key vs Foreign Key
+3. Primary Key vs Unique key
+4. Primary Key vs Candidate Key
+
+Q2: Explain DEFAULT constraint in MySQL  
+Answer : DEFAULT constraint provides a default value to a column. In case a row is inserted into the table and no value is provided to the column, the default value is taken.
+Consider a table Customer created using statement below.
+
+Q3: Explain foreign key in MySQL  
+
+Q4: What is primary key constraint and unique key constraints?  
+Answer
+Primary key is a column or a group of columns in table which uniquely identifies a row in database. A primary key column can not have NULL value. Values in primary key column or columns must be unique so that a row or entry can be uniquely identified using primary key.
+Unique key constraint ensures that values entered in a column are unique. Although primary key values will be unique, you might want to ensure that some other column also has non-duplicate entries. For example if we have multiple users and want to ensure that no two users with same email id are added to the table, we can put UNIQUE key constraint on email_id column. NULL values are ignored in case of Unique key constraint which means NULL is allowed value for email id in this case.
+
+
+Q5: How are VARCHAR and CHAR different. Talk about cases where you will use one over other.  
+1. CHAR stores characters of fixed length while VARCHAR can store characters of variable length.
+2. CHAR has memory allocation equivalent to the maximum size specified while VARCHAR has variable length memory allocation.
+ 
+Q6: Describe BLOB in MySQL. What is it used for? 
+Answer :
+BLOB or Binary Large Object can be used to store binary data in MySQL. Sometimes binary data like images need to be stored in SQL databases. For example you might want to store user photos along with other user details in the database table. Binary data of the user photo can be saved as a BLOB. By using BLOB, we will not require separate storage for images. BLOB helps in removing complexity and providing portability in such cases.
+
+ 
+Q7: What is an AGGREGATE function. Name few aggregate functions used in MySQL.  
+
+Q.8: What is the difference between TRUNCATE and DELETE?  Related To: SQL
+Ans: Trucate : It is use when you want to delete you data without distroying table structures that time we can use TRUNCATE
+	 DELETE : It is use when you want to delete data as well structure of table aslo that time we can use DELETE .
+
+Q9: What is the difference between Data Definition Language (DDL) and Data Manipulation Language (DML)? Related To: SQL, T-SQL, Databases 
+
+Answer
+Data definition language (DDL) commands are the commands which are used to define the database. CREATE, ALTER, DROP and TRUNCATE are some common DDL commands.
+Data manipulation language (DML) commands are commands which are used for manipulation or modification of data. INSERT, UPDATE and DELETE are some common DML commands.
+
+
+Q10: What is a view in MySQL. How can you create and query a view?   
+  
+Q11: Explain GRANT command in MySQL  
+ 
+ 
+ 
+Q12: Both TIMESTAMP and DATETIME are used to store data and time. Explain difference between them and when should one be used?  
+ 
+Q13: What is mysqldump?  
+ 
+Q14: What is the difference between commands create database and create schema in MySQL?  
+ 
+Q15: What is index in MySQL? What is advantage of index?  
+ 
+Q16: What is a trigger. What are different type of triggers in MySQL?  
+ 
+Q17: What different stored objects are supported in MySQL?  
+ 
+Q18: What is the use of IN and BETWEEN in MySQL queries?  
+Ans: IN Contant are find the value into a list that you have search and BETWEEN clause find the data in between range into a list of data.
+ 
+Q19: What is Stored Function in MySQL. How are they different from Stored Procedure?  
+ 
+Q20: What are REPEAT, LOOP and WHILE statements used for?  
+ 
+Q21: What is the use of DELIMETER command in MySQL?  
+ 
+Q22: What is difference between BLOB and TEXT in MySQL?  
+ 
+Q23: What are different TEXT data types in MySQL. What is difference between TEXT and VARCHAR?  
+ 
+Q24: What is MySQL Workbench?  
+ 
+Q25: What are some major differences between MySQL and Oracle database?  
+  
+Q26: Compare MySQL and PostgresSQL  
+ 
+Q27: What is cursor used in MySQL? What are properties of MySQL cursor?  
+ 
+Q28: What are some advantages and disadvantages of stored procedures in MySQL?  
+  
+Q29: What happens to a trigger in MySQL if an operation which trigger is associated with fails? Does the trigger execute?  
+ 
+Q30: What is the use of SAVEPOINT in MySQL?  
+
+
+
+								Code Challenges
+ 
+Q1: How can you delete one or multiple columns from a MySQL database table?  
+	
+	ALTER TABLE TableName
+	    DROP Column1,
+	    DROP Column2;
+ 
+Q2: Find duplicate records in a MySQL table .
+	
+	SELECT 
+	    email, 
+	    COUNT(email)
+	FROM
+	    contacts
+	GROUP BY email
+	HAVING COUNT(email) > 1;
+
+  
+Q3: How can ENUM be used in MySQL. Give an example.  
+  
+Q4: 
+  
+Q5: What is AUTO INCREMENT in MySQL? Explain with an example.  
+  
+Q6: What happens if a duplicate entry is already there when adding constraint?  
+  
+Q7: A multiple column index is created over firstName, lastName, city columns of a Customer table. Will this index be used for SELECT queries based on only first_name, only last_name or only city values?  
+  
+Q8: Write a query to concatenate and display all distinct names in a single row  
+  
+Q9: Provide an example of UPSERT logic using MySQL  
+  
+Q10: Remove duplicate rows from a table in mysql ?
+  
+Q11: Difference between Innodb Storage Engine & MYISAM Storage Engine in mysql ?
+Ans: 
+
+Q12: What is Row Level Locking in mysql ?
+Ans: 
+
+Q13: What is Table Level Locking in mysql ?
+Ans: 
+
+Q14: What is CSV Storage Engine in mysql ?
+Ans: 
+
+Q15: What is MRG_MyISAM Storage Engine in mysql ?
+Ans: 
+
+Q16: What is MEMORY Storage Engine in mysql ?
+Ans: 
+
+Q17: What is Aria Storage Engine in mysql ?
+Ans: 
+
+Q18: What is SEQUENCE Storage Engine in mysql ?
+Ans: 
+
+Q19: What is InnoDB Storage Engine in mysql ?
+Ans: 
+
+Q20: What is MyISAM Storage Engine in mysql ?
+Ans: 
+
+Q21: What is PERFORMANCE_SCHEMA Storage Engine in mysql ?
+Ans:
+
+Q22: What is use of setInterval() function ?
+Ans: 
+	1. The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
+
+	2. The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.
+
+	3. The ID value returned by setInterval() is used as the parameter for the clearInterval() method.
+
+	Tip 1: 1000 ms = 1 second.
+
+	Tip 2: To execute a function only once, after a specified number of milliseconds, use the setTimeout() method.
+
+Q23: What is use of setTimeout() function ?
+Ans: 
+	1. The setTimeout() method calls a function or evaluates an expression after a specified number of milliseconds.
+
+	Tip 1: 1000 ms = 1 second.
+
+	Tip 2: The function is only executed once. If you need to repeat execution, use the setInterval() method.
+
+	Tip 3: Use the clearTimeout() method to prevent the function from running.
+
+
+Q24: What is use of clearTimeout() function ?
+Ans: 
+	1. The clearTimeout() method clears a timer set with the setTimeout() method.
+
+	2. The ID value returned by setTimeout() is used as the parameter for the clearTimeout() method.
+
+	Syntax : myVar = setTimeout("javascript function", milliseconds);
+
+Q24: What is use of clearTimeout() function ?
+
+Q25: What is use of tooltip() function ?
+
+Q26: How to use className() function ?
+
+Q27: How to use setAttribute() function ?
+
+Q28: How to use classList() function ?
+
+Q29: How to use toggle() function ?
+

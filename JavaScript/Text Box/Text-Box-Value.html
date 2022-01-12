@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Text Box Value</title>
+</head>
+<body>
+	<input type="text" id="txt" name="">
+	<div id="result"></div>
+	<script type="text/javascript">
+		let txtValue = document.getElementById('txt');
+		/*
+		How you can use input event 
+		txtValue.addEventListener('input', function(){
+			if(this.value == ""){
+				document.getElementById('result').innerHTML = "";
+			}else{
+				document.getElementById('result').innerHTML ="Welcome "+this.value;
+			}
+		});
+		*/
+
+		/*
+		How you can use fucus and blur event 
+		*/
+
+		txtValue.addEventListener('focus', function(){
+			this.style.backgroundColor = "red"
+		});
+
+		txtValue.addEventListener('blur', function(){
+			this.style.backgroundColor = "green"
+		});
+
+		// search, submit, change event also to be used like above code 
+
+	</script>
+</body>
+</html>

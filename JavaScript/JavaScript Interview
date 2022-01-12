@@ -1,0 +1,105 @@
+Q.1: Explain Hoisting in javascript.
+Ans: Hoisting is a default behaviour of javascript where all the variable and function declarations are moved on top.
+Example :
+	x = 5;
+	document.write("demo");
+	document.write("This is hosting behaviour of javascript");
+	var x;
+
+	Hoisting behaviour just decalations are move to top
+	var x;
+	x = 5; 
+	document.write("demo");
+	document.write("This is hosting behaviour of javascript");
+
+
+Q.2: Is javascript a statically typed or a dynamically typed language?
+Ans: JavaScript is a dynamically typed language. In a dynamically typed language, the type of a variable is checked during run-time in contrast to statically typed language, where the type of a variable is checked during compile-time.
+
+
+Q.3: What is NaN property in JavaScript?
+Ans: NaN property represents “Not-a-Number” value. It indicates a value which is not a legal number.
+typeof of a NaN will return a Number .
+To check if a value is NaN, we use the isNaN() function,
+
+Q.4: Explain Scope and Scope Chain in javascript ?
+Ans: Scope in JS, determines the accessibility of variables and functions at various parts in one’s code.
+	 In general terms, the scope will let us know at a given part of code, what are the variables and functions that we can or cannot access.
+
+	There are three types of scopes in JS:
+
+		Global Scope
+		Local or Function Scope
+		Block Scope
+
+	Global Scope : Variables or functions declared in the global namespace have global scope, which means all the variables and functions having global scope can be accessed from anywhere inside the code .
+
+	Example : 	var globalVariable = "Hello world";
+
+				function sendMessage(){
+				  return globalVariable; // can access globalVariable since it's written in global space
+				}
+
+				function sendMessage2(){
+				  return sendMessage(); // Can access sendMessage function since it's written in global space
+				}
+
+				sendMessage2();  // Returns “Hello world”
+
+	Function Scope : Any variables or functions declared inside a function have local/function scope, which means that all the variables and functions declared inside a function, can be accessed from within the function and not outside of it.
+
+	Example : 	function awesomeFunction(){
+				  var a = 2;
+
+				  var multiplyBy2 = function(){
+				    console.log(a*2); // Can access variable "a" since a and multiplyBy2 both are written inside the same function
+				  }
+				}
+				console.log(a); // Throws reference error since a is written in local scope and cannot be accessed outside
+
+				multiplyBy2(); // Throws reference error since multiplyBy2 is written in local scope
+
+	Block Scope : Block scope is related to the variables declared using let and const. Variables declared with var do not have block scope.
+
+	Block scope tells us that any variable declared inside a block { }, can be accessed only inside that block and cannot be accessed outside of it.
+
+	Example : 
+				{
+				  let x = 45;
+				}
+
+				console.log(x); // Gives reference error since x cannot be accessed outside of the block
+
+				for(let i=0; i<2; i++){
+				  // do something
+				}
+
+				console.log(i); // Gives reference error since i cannot be accessed outside of the for loop block
+
+Q.5: What are object prototypes?
+Ans: A prototype is a blueprint of an object. Prototype allows us to use properties and methods on an object even if the properties and methods do not exist on the current object.
+
+	For example,
+
+		1. Date objects inherit properties from the Date prototype
+
+		2. Math objects inherit properties from the Math prototype
+
+		3. Array objects inherit properties from the Array prototype.
+
+		4. On top of the chain is Object.prototype. Every prototype inherits properties and methods from the Object.prototype.
+
+Q.6: What are callbacks?
+Ans: In JavaScript, a callback is a function passed into another function as an argument to be executed later. ... When you pass a callback function into another function, you just pass the reference of the function i.e., the function name without the parentheses () .
+
+
+
+
+cloneNode()		
+cloneBox()
+insertBefore() 	-> it is take two arguments 1. tagName 2. postition -> where you want to add anyElement
+firstElementChild() -> it select first element of tags 
+nextElementSibling() -> it select second element of first Element
+
+
+38 videos completes 

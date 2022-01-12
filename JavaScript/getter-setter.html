@@ -1,0 +1,19 @@
+<script type="text/javascript">
+	var obj = {
+		fname : "Abdullah",
+		lname : "Sheikh",
+		get getFullName(){
+			return this.fname+" "+this.lname;
+		},
+		// setter alway take single arguments
+		set setFullName(arg){
+			this.fname = arg.fn;
+			this.lname = arg.ln;
+		}
+	}
+	obj.setFullName = {
+		fn:"Shamsha",
+		ln:"Abdullah"
+	};
+	document.write(obj.getFullName);
+</script>

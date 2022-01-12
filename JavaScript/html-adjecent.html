@@ -1,0 +1,14 @@
+<div id="adjacentId">
+	<div> Hello Abdullah</div>
+</div>
+<script type="text/javascript">
+	/*
+		beforebegin	: It is just add a new element before parent div tag
+		afterbegin	: It is just add a new elemnent just after parent div tag
+		afterend : It is just add a new element just child div tag 
+		beforeend : It is just add new element after parent div tag 
+	*/
+	let adjacentId = document.getElementById('adjacentId');
+	let result = adjacentId.insertAdjacentHTML('beforebegin','<p>Hello New adjacent HTML </p>');
+	console.log(result);
+</script>
